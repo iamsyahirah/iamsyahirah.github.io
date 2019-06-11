@@ -8,7 +8,7 @@ Here are seven simple ideas you can use to improve your designs today.
 
 1.  Use color and weight to create hierarchy instead of size
 
-    ![My helpful screenshot](/assets/img1.png)
+    ![My helpful screenshot](/assets/img1.png){:height="700px" width="400px"}
    
     A common mistake when styling UI text is relying too much on font size to control your hierarchy.
 
@@ -16,7 +16,7 @@ Here are seven simple ideas you can use to improve your designs today.
 
     “Is this text secondary? <strong>Let’s make it smaller.”</strong>
 
-    Instead of leaving all of the heavy lifting to font size alone,<strong>try using color or font weight to do the same job.</trong>
+    Instead of leaving all of the heavy lifting to font size alone,<strong>try using color or font weight to do the same job.</strong>
 
     “Is this text important? Let’s make it bolder.”
 
@@ -28,14 +28,13 @@ Here are seven simple ideas you can use to improve your designs today.
     *  A grey for secondary content (<i>like the date an article was published</i>)
     *  A lighter grey for ancillary content (<i>maybe the copyright notice in a footer?</i>)
     
-    ![My helpful screenshot](/assets/img2.png)
+    ![My helpful screenshot](/assets/img2.png){:height="700px" width="400px"}
     
     Similarly, two font weights is usually enough for UI work:
 
     *  A normal font weight (400 or 500 depending on the font) for most text
     *  A heavier font weight (600 or 700) for text you want to emphasize
     
-    ![My helpful screenshot](/assets/img3.png)
+    ![My helpful screenshot](/assets/img3.png){:height="700px" width="400px"}
     
-    <strong>Stay away from font weights under 400 for UI work; </strong>they can work for large headings but are too hard to read at smaller sizes.
-    If you’re considering using a lighter weight to de-emphasize some text, use a lighter color or smaller font size instead.
+    <strong>Stay away from font weights under 400 for UI work; </strong>they can work for large headings but are too hard to read at         smaller sizes. If you’re considering using a lighter weight to de-emphasize some text, use a lighter color or smaller font size instead.
