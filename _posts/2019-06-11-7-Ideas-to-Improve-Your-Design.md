@@ -6,7 +6,7 @@ date: 2019-06-11
 
 Here are seven simple ideas you can use to improve your designs today.
 
-1.  Use color and weight to create hierarchy instead of size
+1.  <strong><li>Use color and weight to create hierarchy instead of size</strong></li>
 
     ![My helpful screenshot](/assets/img1.png){:class="image-centered"}
    
@@ -40,7 +40,7 @@ Here are seven simple ideas you can use to improve your designs today.
     <strong>Stay away from font weights under 400 for UI work; </strong>they can work for large headings but are too hard to read at         smaller sizes. If you’re considering using a lighter weight to de-emphasize some text, use a lighter color or smaller font size instead.
 
 
-2.  Don’t use grey text on colored backgrounds
+2.  <strong>Don’t use grey text on colored backgrounds</strong>
 
  ![My helpful screenshot](/assets/img4.png){:class="image-centered"}
  
@@ -49,13 +49,15 @@ Here are seven simple ideas you can use to improve your designs today.
   ![My helpful screenshot](/assets/img5.png){:class="image-centered"}
   
   There are two ways you can reduce contrast when working with colorful backgrounds:
-    *  Reduce the opacity of white text
-        Use white text and lower the opacity. This lets the background color bleed through a bit, de-emphasizing the text in a way that         doesn’t clash with the background.
+  1.  Reduce the opacity of white text
+  
+  Use white text and lower the opacity. This lets the background color bleed through a bit, de-emphasizing the text in a way that         doesn’t clash with the background.
         
   ![My helpful screenshot](/assets/img6.png){:class="image-centered"}
   
-   *  Hand-pick a color that’s based on the background color
-        This works better than reducing the opacity when your background is an image or pattern, or when reducing the opacity makes the         text feel too dull or washed out.
+   2.  Hand-pick a color that’s based on the background color
+   
+   This works better than reducing the opacity when your background is an image or pattern, or when reducing the opacity makes the          text feel too dull or washed out.
         
   ![My helpful screenshot](/assets/img7.png){:class="image-centered"}   
   
