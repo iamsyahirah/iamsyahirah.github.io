@@ -38,3 +38,25 @@ Here are seven simple ideas you can use to improve your designs today.
     ![My helpful screenshot](/assets/img3.png){:class="image-centered"}
     
     <strong>Stay away from font weights under 400 for UI work; </strong>they can work for large headings but are too hard to read at         smaller sizes. If you’re considering using a lighter weight to de-emphasize some text, use a lighter color or smaller font size instead.
+
+
+2.  Don’t use grey text on colored backgrounds
+
+ ![My helpful screenshot](/assets/img4.png){:class="image-centered"}
+ 
+ Making text a lighter grey is a great way to de-emphasize it on white backgrounds, but it doesn’t look so great on colored backgrounds. That’s because the effect we’re actually seeing with grey on white is reduced contrast. <strong>Making the text closer to the background color is what actually helps create hierarchy</strong>, not making it light grey.
+ 
+  ![My helpful screenshot](/assets/img5.png){:class="image-centered"}
+  
+  There are two ways you can reduce contrast when working with colorful backgrounds:
+    *  Reduce the opacity of white text
+        Use white text and lower the opacity. This lets the background color bleed through a bit, de-emphasizing the text in a way that         doesn’t clash with the background.
+        
+  ![My helpful screenshot](/assets/img6.png){:class="image-centered"}
+  
+   *  Hand-pick a color that’s based on the background color
+        This works better than reducing the opacity when your background is an image or pattern, or when reducing the opacity makes the         text feel too dull or washed out.
+        
+  ![My helpful screenshot](/assets/img7.png){:class="image-centered"}   
+  
+  Choose a color that’s the same hue as the background, adjusting saturation and lightness until it looks right to you.
