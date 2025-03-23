@@ -22,6 +22,8 @@ nav-menu:
   permalink: about
 - text: Skills
   permalink: skills
+- text: Projects
+  permalink: projects
 - text: Blog
   permalink: blog
 
