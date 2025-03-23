@@ -12,7 +12,7 @@ SQL injection happens when hackers insert malicious code into your database quer
 
 Example:
 
-```
+```php
 $stmt = $pdo->prepare('SELECT * FROM users WHERE username = :username');
 $stmt->bindParam(':username', $username);
 $stmt->execute();
@@ -24,7 +24,7 @@ XSS happens when hackers inject harmful scripts into your website, which then ru
 
 Example:
 
-```
+```php
 $username = $_POST['username'];
 $sanitizedUsername = htmlspecialchars($username);
 echo "Welcome, " . $sanitizedUsername;
@@ -36,7 +36,7 @@ We use CSRF tokens to make sure requests come from trusted sources. To prevent t
 
 Example:
 
-```
+```php
 $csrfToken = bin2hex(random_bytes(32));
 $_SESSION['csrfToken'] = $csrfToken;
 // ...
@@ -51,7 +51,7 @@ Always check file types before accepting uploads. Uploading files can be risky b
 
 Example:
 
-```
+```php
 $allowedTypes = ['image/jpeg', 'image/png'];
 $allowedExtensions = ['jpg', 'jpeg', 'png'];
 $fileType = $_FILES['file']['type'];
@@ -68,7 +68,7 @@ Never store passwords as plain text! Instead, use password_hash() to store passw
 
 Example:
 
-```
+```php
 $options = [
     'cost' => 12
 ];
