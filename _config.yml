@@ -3,8 +3,8 @@ baseurl: "" # the name of your github repo
 url: "https://iamsyahirah.github.io/" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Syahirah: Personal Site"
-description: This is my personal site
+title: "Syahirah"
+description: Personal Site
 
 # color theme for links
 theme-color: indigo # indigo|yellow|pink|green|stone|
