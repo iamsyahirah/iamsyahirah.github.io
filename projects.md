@@ -1,7 +1,7 @@
 ---
 layout: page
-title: My Skills
-permalink: skills
+title: My Projects
+permalink: projects
 ---
 
 ### Web Development
