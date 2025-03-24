@@ -2,7 +2,6 @@
 layout: post
 title: How i build this website?
 tags: jekyll github
-permalink: jekyll-github
 ---
 
 There are many ways to build a portfolio. Previously, I used WordPress for my portfolio website, but I encountered many issues, such as slow loading times and the need to install multiple plugins to manage the site. Eventually, I became lazy to write articles.
