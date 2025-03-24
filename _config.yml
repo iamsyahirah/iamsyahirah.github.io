@@ -4,14 +4,14 @@ url: "https://iamsyahirah.github.io/" # the url of your github pages
 
 # site information used in page title, meta data etc.
 title: "Syahirah"
-description: Personal Site
+description: Syahirah's Personal Website
 
 # color theme for links
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: Syahirah
-author-bio: Web Developer and Designer  # change to false to hide
+author-bio: programmer / ui designer  # change to false to hide
 author-image: img1.jpeg  # file must be in the /assets/img/ folder
 
 # navigation menu
@@ -35,7 +35,7 @@ github: https://github.com/iamsyahirah
 #linkedin: https://linkedin.com/
 medium: false
 google-scholar: false
-email: false
+email: "i43.syahirah@gmail.com"
 
 # footer information
 footer-msg: "Powered by TailPages"
