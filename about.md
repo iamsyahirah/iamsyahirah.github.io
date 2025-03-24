@@ -10,20 +10,6 @@ I'm a part-time Information Technology student at UiTM and a web developer. I pr
 
 I'm also working on a few side projects and exploring new technologies, including Artificial Intelligence and Data Science.
 
-### Skills
-
-| Skill       | Level         |
-| ---------   | --------------| 
-| HTML        | Advanced      | 
-| CSS         | Advanced      |
-| C++         | Intermediated | 
-| MySQL       | Intermediated | 
-| JavaScript  | Intermediated | 
-| PHP         | Intermediated | 
-| Laravel     | Intermediated | 
-| React       | Intermediated | 
-| Python      | Intermediated | 
-
 ### Certification
 
 - Application Development Foundations, Oracle `Jan 2025`
