@@ -7,7 +7,7 @@ permalink: projects
 ### Web Development
 
 1. Ramadan Good Deeds Tracker - Tracks daily Ramadan good deeds and progress. `Next.js` [Link](https://ramadan-good-deeds-tracker.netlify.app/)
-2. AI Travel Planner Web App - Generates personalized itineraries using AI. `React.js, Gemini API`
+2. AI Travel Planner Web App - Generates personalized itineraries using AI. `React.js, Gemini API` [Link]( https://www.loom.com/share/14fe9f6e64494591bbcc5497a21a8f31?sid=b45eea19-2396-4abd-90e6-424ac3244e80)
 3. Car Rental Management System – Rental system built with Oracle APEX. `APEX` _University Project_
 4. Rental Book System – A book rental management system. `Laravel` [Link](https://github.com/iamsyahirah/book-rental-system)
 5. Hospital Management System – Healthcare system using MVC. `Java` _University Project_
