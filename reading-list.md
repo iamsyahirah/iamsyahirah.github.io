@@ -4,7 +4,7 @@ title: Reading List
 permalink: reading-list
 ---
 
-# Reading List
+### Reading List
 
 {% comment %}
 Sort by date (newest first). Books without date will be handled after.
