@@ -1,0 +1,23 @@
+- title: "Deep Work"
+  author: "Cal Newport"
+  publisher: "Grand Central"
+  year: 2016         # publication year (optional but nice)
+  date: 2025-10-12   # when you finished/added it
+
+- title: "Clean Architecture"
+  author: "Robert C. Martin"
+  publisher: "Pearson"
+  year: 2017
+  date: 2025-09-03
+
+- title: "Atomic Habits"
+  author: "James Clear"
+  publisher: "Avery"
+  year: 2018
+  date: 2024-12-28
+
+# If you don’t have a date yet, you can omit it:
+- title: "Designing Data-Intensive Applications"
+  author: "Martin Kleppmann"
+  publisher: "O’Reilly"
+  year: 2017
