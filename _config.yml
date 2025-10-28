@@ -24,6 +24,8 @@ nav-menu:
   permalink: projects
 - text: Blog
   permalink: blog
+- text: Reading
+  permalink: reading-list
 
 # use false to turn off any social media links
 twitter: https://twitter.com/iam_syahirah_
@@ -45,3 +47,4 @@ google-analytics: G-WCRC1TC2V5
 # jekyll plugins - no need to change
 plugins:
     - jekyll-seo-tag
+
