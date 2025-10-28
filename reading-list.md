@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
 title: Reading List
-permalink: /reading-list/
+permalink: reading-list
 ---
 
 # Reading List
