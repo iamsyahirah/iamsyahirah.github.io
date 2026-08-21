@@ -270,6 +270,13 @@ hr {
   color: var(--comment);
   border-right: 1px solid var(--border);
   white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tab:hover {
+  color: var(--fg-bright);
+  background: var(--bg-surface);
+  text-decoration: none;
 }
 .tab.active {
   background: var(--bg);
@@ -480,7 +487,9 @@ button.submit:hover {
   .titlebar .path { display: none; }
   .gutter { display: none; }
   .editor-pane { padding: 1.75rem 1.25rem 4rem; }
-  .tab span.label { max-width: 120px; overflow: hidden; text-overflow: ellipsis; }
+  .tabbar { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tab { padding: 0 12px; font-size: 12px; gap: 5px; }
+  .tab span.label { max-width: 96px; overflow: hidden; text-overflow: ellipsis; }
 }
 
 @media (prefers-reduced-motion: reduce) {
