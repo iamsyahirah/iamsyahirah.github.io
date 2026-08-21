@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout
+  title="Home"
+  description="Notes on code, design, and whatever else is worth writing down."
+  filename="index.astro"
+  filepath="~/index.astro"
+  currentPath="/"
+  language="Astro"
+  gutterLines={40}
+>
+  <p class="eyebrow"><span class="kw">import</span> {'{ posts }'} <span class="kw">from</span> <span class="str">'./content/blog'</span></p>
+  <h1 class="page-title">Hi, I'm Syahirah.</h1>
+  <p style="max-width: 60ch; color: var(--fg); margin-bottom: 2.5rem;">
+    I write about the things I'm building and learning. Posts are plain
+    <code>.mdx</code> files, rendered here — check the file tree on the left.
+  </p>
+
+  <p class="sidebar-title" style="padding-left:0; margin-bottom: 1rem;">
+    posts/ <span class="badge">{posts.length}</span>
+  </p>
+  <ul class="post-list">
+    {posts.map((post) => (
+      <PostCard
+        slug={post.slug}
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        tags={post.data.tags}
+      />
+    ))}
+  </ul>
+</BaseLayout>

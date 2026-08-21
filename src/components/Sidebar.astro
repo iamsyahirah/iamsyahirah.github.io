@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentPath: string;
+}
+const { currentPath } = Astro.props;
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const isActive = (href: string) => currentPath === href;
+---
+
+<nav class="sidebar" aria-label="Site navigation">
+  <p class="sidebar-title">Explorer</p>
+  <ul class="tree">
+    <li>
+      <a href="/" class={isActive('/') ? 'active' : ''}>
+        <span class="icon blue">◆</span> index.astro
+      </a>
+    </li>
+    <li>
+      <a href="/about" class={isActive('/about') ? 'active' : ''}>
+        <span class="icon yellow">◆</span> about.mdx
+      </a>
+    </li>
+    <li>
+      <a href="/contact" class={isActive('/contact') ? 'active' : ''}>
+        <span class="icon green">◆</span> contact.mdx
+      </a>
+    </li>
+    <li>
+      <span class="branch folder">▾ posts/</span>
+      <ul class="nested">
+        {posts.map((post) => (
+          <li>
+            <a
+              href={`/blog/${post.slug}`}
+              class={isActive(`/blog/${post.slug}`) ? 'active' : ''}
+            >
+              <span class="icon magenta">◆</span>
+              {post.slug}.mdx
+            </a>
+          </li>
+        ))}
+      </ul>
+    </li>
+  </ul>
+</nav>

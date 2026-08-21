@@ -1,0 +1,54 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  post: {
+    slug: string;
+    data: {
+      title: string;
+      description: string;
+      pubDate: Date;
+      updatedDate?: Date;
+      tags: string[];
+    };
+  };
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, updatedDate, tags } = post.data;
+
+const dateStr = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  filename={`${post.slug}.mdx`}
+  filepath={`~/posts/${post.slug}.mdx`}
+  currentPath={`/blog/${post.slug}`}
+  language="MDX"
+>
+  <p class="eyebrow">
+    <span class="kw">export</span> <span class="str">const</span> post = {'{'} date: '{dateStr}' {'}'}
+  </p>
+  <h1 class="page-title">{title}</h1>
+  <div class="row1" style="margin-bottom: 2rem;">
+    {tags.map((t: string) => <span class="tag">{t}</span>)}
+    {updatedDate && (
+      <span>
+        · updated {updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+      </span>
+    )}
+  </div>
+
+  <article>
+    <slot />
+  </article>
+
+  <hr />
+  <p><a href="/">&larr; back to index.astro</a></p>
+</BaseLayout>

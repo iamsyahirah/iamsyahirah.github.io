@@ -1,0 +1,35 @@
+---
+title: "Why I Built This in Tokyo Night"
+description: "A short case for the theme, and how the palette maps to this site."
+pubDate: 2026-08-10
+tags: ["design", "tokyo-night"]
+---
+
+Tokyo Night is the theme I keep coming back to. It's dark without going flat
+black, and every accent color is desaturated just enough that nothing fights
+for attention.
+
+## The palette, roughly
+
+| Role | Color |
+|---|---|
+| Background | `#1a1b26` |
+| Foreground | `#a9b1d6` |
+| Accent (links, focus) | `#7aa2f7` |
+| Strings / success | `#9ece6a` |
+| Warnings | `#e0af68` |
+| Errors | `#f7768e` |
+
+## Bringing it to the web
+
+The trick was treating the whole page like an editor window instead of just
+reusing the colors on a normal layout — a sidebar file tree, tabs, a status
+bar. Once the chrome was right, the color choices felt obvious instead of
+arbitrary.
+
+```css
+:root {
+  --bg: #1a1b26;
+  --accent: #7aa2f7;
+}
+```

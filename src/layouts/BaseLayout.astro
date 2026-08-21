@@ -1,0 +1,75 @@
+---
+import Sidebar from '../components/Sidebar.astro';
+import TabBar from '../components/TabBar.astro';
+import StatusBar from '../components/StatusBar.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  filename: string;
+  filepath: string;
+  currentPath: string;
+  language?: string;
+  gutterLines?: number;
+}
+
+const {
+  title,
+  description,
+  filename,
+  filepath,
+  currentPath,
+  language = 'MDX',
+  gutterLines = 46,
+} = Astro.props;
+
+const siteName = 'Syahirah — code & notes';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} · {siteName}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#1a1b26" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="titlebar">
+        <div class="dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <span class="path">{filepath} — {siteName}</span>
+      </div>
+
+      <div class="body-row">
+        <Sidebar currentPath={currentPath} />
+
+        <div class="editor-col">
+          <TabBar filename={filename} />
+
+          <div class="editor-scroll">
+            <div class="editor-pane">
+              <div class="gutter" aria-hidden="true">
+                {Array.from({ length: gutterLines }, (_, i) => (
+                  <div>{i + 1}</div>
+                ))}
+              </div>
+              <main class="content">
+                <slot />
+              </main>
+            </div>
+          </div>
+
+          <StatusBar language={language} />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

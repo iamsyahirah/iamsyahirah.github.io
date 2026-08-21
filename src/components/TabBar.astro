@@ -1,0 +1,15 @@
+---
+interface Props {
+  filename: string;
+  icon?: string;
+}
+const { filename, icon = '◆' } = Astro.props;
+---
+
+<div class="tabbar" role="tablist" aria-label="Open file">
+  <div class="tab active" role="tab" aria-selected="true">
+    <span class="icon blue">{icon}</span>
+    <span class="label">{filename}</span>
+    <span class="dirty" aria-hidden="true"></span>
+  </div>
+</div>

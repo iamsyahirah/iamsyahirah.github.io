@@ -1,0 +1,19 @@
+---
+interface Props {
+  language?: string;
+  lines?: number;
+}
+const { language = 'MDX', lines } = Astro.props;
+---
+
+<div class="statusbar">
+  <div class="side">
+    <span>⎇ main</span>
+    <span>✓ no problems</span>
+  </div>
+  <div class="side">
+    {lines ? <span>{lines} lines</span> : null}
+    <span>UTF-8</span>
+    <span>{language}</span>
+  </div>
+</div>

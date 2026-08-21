@@ -1,0 +1,31 @@
+---
+title: "Writing Posts in MDX with Astro Content Collections"
+description: "How this blog's post pipeline is wired up, for anyone copying it."
+pubDate: 2026-08-18
+tags: ["astro", "mdx"]
+---
+
+Every post here is an `.mdx` file in `src/content/blog/`. Astro's content
+collections give the folder a schema, so a post missing a `title` or a valid
+`pubDate` fails the build instead of shipping broken.
+
+## The frontmatter contract
+
+```yaml
+---
+title: "Post Title"
+description: "One line for the card and the meta tag."
+pubDate: 2026-08-18
+tags: ["tag-one", "tag-two"]
+draft: false
+---
+```
+
+`draft: true` keeps a post out of the listing and the RSS feed without
+deleting it — handy for half-finished ideas.
+
+## Why MDX over plain Markdown
+
+MDX lets you drop in a real component when prose isn't enough — a chart, a
+callout, an embed — while still writing everything else as normal Markdown.
+Nothing here uses that yet, but the door's open.

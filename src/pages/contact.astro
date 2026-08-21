@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Ways to get in touch."
+  filename="contact.mdx"
+  filepath="~/contact.mdx"
+  currentPath="/contact"
+  language="MDX"
+  gutterLines={38}
+>
+  <p class="eyebrow"><span class="kw">export</span> <span class="str">const</span> contact = {'{...}'}</p>
+  <h1 class="page-title">Contact</h1>
+
+  <p style="max-width: 60ch;">Reach out however's easiest — email, or the form below.</p>
+
+  <div class="contact-card" role="group" aria-label="Contact details">
+    <div><span class="punc">{'{'}</span></div>
+    <div>&nbsp;&nbsp;<span class="k">"email"</span><span class="punc">:</span> <span class="s">"hello@example.com"</span><span class="punc">,</span></div>
+    <div>&nbsp;&nbsp;<span class="k">"github"</span><span class="punc">:</span> <span class="s">"github.com/yourhandle"</span><span class="punc">,</span></div>
+    <div>&nbsp;&nbsp;<span class="k">"location"</span><span class="punc">:</span> <span class="s">"remote"</span></div>
+    <div><span class="punc">{'}'}</span></div>
+  </div>
+
+  <!--
+    This form has no backend — Astro builds a static site. Point the
+    `action` at a form service (Formspree, Getform, etc.) and it'll work
+    as-is, or swap this for a mailto: link.
+  -->
+  <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+    <div class="field">
+      <label for="name">Name <span class="req">*</span></label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="field">
+      <label for="email">Email <span class="req">*</span></label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="field">
+      <label for="message">Message <span class="req">*</span></label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" class="submit">send()</button>
+  </form>
+</BaseLayout>
